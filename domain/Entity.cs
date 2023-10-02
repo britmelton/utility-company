@@ -19,7 +19,7 @@ public abstract class Entity
         if (other is null || GetType() != other.GetType())
             return false;
 
-        return Equals(other);
+        return Equals((Entity) other);
     }
 
     public bool Equals(Entity other) => Id == other.Id;
